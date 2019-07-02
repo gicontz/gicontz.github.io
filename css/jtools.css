@@ -46,7 +46,7 @@ div#jMenuTabsDatabase {
     margin-left: 7%;
 }
 
-div {
+div, ul {
     background: #455A64 !important;
 }
 
