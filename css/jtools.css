@@ -1,0 +1,57 @@
+button {
+    border: 1px solid #455A64;
+    padding: 10px 20px 10px;
+    font-size: 13px !important;
+    font-family: 'Calibri', sans-serif !important;
+}
+
+div#jMenuTabsSQLMon {
+    margin-left: 7%;
+    background: #222222 !important;
+}
+
+body {
+    background: #455A64;
+}
+
+div#jMenuTabs {
+    background: #455A64 !important;
+}
+
+p, label, b {
+    color: #ffffff !important;
+}
+
+ul.jMenuTabsList.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all li {
+    display: block !important;
+    float: none;
+    background: #FFF9C4;
+    padding: 0;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    position: relative !important;
+    max-width: 100% !important;
+}
+
+ul.jMenuTabsList.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all li a.ui-tabs-anchor {
+    float: none;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 15px 20px 15px;
+}
+
+div#jMenuTabsDatabase {
+    margin-left: 7%;
+}
+
+div {
+    background: #455A64 !important;
+}
+
+iframe#iMonitor {
+    height: 100%;
+    overflow-y: scroll;
+    max-height: 500px;
+}
