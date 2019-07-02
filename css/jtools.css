@@ -1,5 +1,5 @@
 button {
-    border: 1px solid #455A64;
+    border: 1px solid #212121;
     padding: 10px 20px 10px;
     font-size: 13px !important;
     font-family: 'Calibri', sans-serif !important;
@@ -7,15 +7,15 @@ button {
 
 div#jMenuTabsSQLMon {
     margin-left: 7%;
-    background: #222222 !important;
+    background: #212121 !important;
 }
 
 body {
-    background: #455A64;
+    background: #212121;
 }
 
 div#jMenuTabs {
-    background: #455A64 !important;
+    background: #212121 !important;
 }
 
 p, label, b {
@@ -47,7 +47,7 @@ div#jMenuTabsDatabase {
 }
 
 div, ul {
-    background: #455A64 !important;
+    background: #212121 !important;
 }
 
 iframe#iMonitor {
