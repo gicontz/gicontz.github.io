@@ -19,6 +19,7 @@ body {
 
 div#jMenuTabs {
     background: rgba(0,0,0,0.7) !important;
+    height: 900px;
 }
 
 p, label, b {
@@ -64,6 +65,5 @@ div#jMenuTabsSQLMon table {
 
 div#jMenuTabs > div {
     margin-left: 7%;
-    height: 900px;
 }
 
