@@ -7,15 +7,18 @@ button {
 
 div#jMenuTabsSQLMon {
     margin-left: 7%;
-    background: #212121 !important;
+    background: rgba(0,0,0,0.7) !important;
 }
 
 body {
-    background: #212121;
+    background: url('../images/retro.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 div#jMenuTabs {
-    background: #212121 !important;
+    background: rgba(0,0,0,0.7) !important;
 }
 
 p, label, b {
@@ -47,7 +50,7 @@ div#jMenuTabsDatabase {
 }
 
 div, ul {
-    background: #212121 !important;
+    background: rgba(0,0,0,0.7) !important;
 }
 
 iframe#iMonitor {
