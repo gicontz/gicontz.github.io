@@ -51,7 +51,7 @@ div, ul {
 }
 
 iframe#iMonitor {
-    height: 800px;
+    height: 1000px;
     overflow-y: scroll;
     max-height: 500px;
 }
