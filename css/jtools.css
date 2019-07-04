@@ -51,9 +51,9 @@ div, ul {
 }
 
 iframe#iMonitor {
-    height: 1000px;
+    height: 800px;
     overflow-y: scroll;
-    max-height: 500px;
+    max-height: 800px;
 }
 div#jMenuTabsSQLMon table {
     height: 100%;
