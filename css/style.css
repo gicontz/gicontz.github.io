@@ -109,6 +109,14 @@ h2#main-text {
     display:  block;
     margin: 30px auto;
 }
+.port-content{
+	display: flex;
+    align-items: center;
+    height: 100%;
+}
+#about .row{
+	height: 100%;
+}
 
 /*Gallery*/
 .gallery-image{
