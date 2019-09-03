@@ -37,14 +37,4 @@ $(document).ready(function(){
 	$(".inline_section, .port-content").height(window.innerHeight);
 	$(".inline_section").width(window.innerWidth + 15);
 	$(".horizontal_content").width((window.innerWidth + 15) * 2);
-
-	$(".gallery-image").on('mouseover', function(){
-		$(".gallery-image span").remove();
-		$(this).append("<span>" + $(this).attr("data-caption") + "</span>");
-		$(this).addClass("active");
-	});
-	$(".gallery-image").on('mouseleave', function(){
-		$(".gallery-image span").remove();
-		$(this).removeClass("active");
-	});
 });
