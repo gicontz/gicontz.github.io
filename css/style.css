@@ -110,12 +110,6 @@ h2#main-text {
     margin: 30px auto;
 }
 
-.about {
-    position:  relative;
-    top: 50%;
-    margin-top: -200px;
-}
-
 /*Gallery*/
 .gallery-image{
 	float: left;
