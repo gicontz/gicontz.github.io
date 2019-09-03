@@ -42,4 +42,6 @@ $(document).ready(function(){
 			},3000);
 		});
 	});
+
+	$("#about").load("contents/about.html");
 });
