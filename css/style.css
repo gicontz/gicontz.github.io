@@ -52,11 +52,13 @@ h2#main-text {
     margin-left: 30px;
 }
 .navigator {
-    position:  absolute;
+    position: fixed;
     top: 0;
-    width: 50px;
-    height:  100%;
-    background:  #0d101c;
+    z-index: 999;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 0.5s all ease;
 }
 .content_border{
 	border-left: 7px solid #ffea82;
@@ -71,7 +73,7 @@ h2#main-text {
     right:  0;
 }
 .prev-button{
-	left: 0;
+	left: 15px;
 }
 .prev-button i{
     right: 50%;
@@ -91,17 +93,39 @@ h2#main-text {
     position: absolute;
     width: 100%;
     height: 100%;
+    transition: 0.5s all ease;
+    opacity: 0;
+}
+.navigator a[href^="#"]:hover {
+    opacity: 0.7;
+}
+.navigator img {
+	position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.next-button.navigator:hover {
+    box-shadow: inset -33px 0 34px -34px rgba(2,2,2,0.6);
+}
+.next-button.navigator img {
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
 }
 .horizontal-scroll-wrapper {
 	width: 100%; 
 	height: 210px;
 }
 .horizontal_content {
+	position: relative;
  	width: 10000px;
 }
 .inline_section{
 	float: left;
 	position: relative;
+}
+.display-none{
+	display: none;
 }
 /*About*/
 .about img {
@@ -110,12 +134,7 @@ h2#main-text {
     margin: 30px auto;
 }
 .port-content{
-	display: flex;
-    align-items: center;
     height: 100%;
-}
-#about .row{
-	height: 100%;
 }
 
 /*Gallery*/
@@ -124,18 +143,14 @@ h2#main-text {
 	background: #ffffff;	
 }
 .gallery-image img{
-	width: 200px;
-	height: 175px;	
-}
-.gallery-container{
-	margin-top: 50px;
+	width: 100%;
+	height: 300px;	
 }
 .gallery-container span{
 	color: #ffffff;
 }
 .hobbies, .webdev{
 	color: #ffffff;
-	margin-top: 100px;
 }
 .hobbies h2 {
     font-weight: 400;
@@ -144,6 +159,7 @@ h2#main-text {
 .gallery-image {
     position:  relative;
     cursor: pointer;
+    width: 25%;
 }
 .gallery-image.active:before {
     position:  absolute;
@@ -152,13 +168,26 @@ h2#main-text {
     height:  100%;
     background: rgba(0,0,0,0.5);
 }
-.gallery-image span {
+.gallery-image.active span {
     position: absolute;
     z-index: 9;
     top: 50%;
+    left: 0;
     margin-top: -10px;
     width: 100%;
     text-align: center;
+}
+.gallery{
+    width: 100%;
+    padding: 0;
+}
+.personal-info .name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.personal-info, .professional-info {
+	margin-top: 50px;
 }
 
 
