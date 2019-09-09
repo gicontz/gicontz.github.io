@@ -28,12 +28,6 @@ $(document).ready(function(){
 		});
 	});
 
-	$("#about").load("contents/about.html");
-
-	$("#webdev-skills").load("contents/webdev-skills.html");
-
-	$("#webframeworks-skills").load("contents/webfw-skills.html");
-
 	$(".inline_section, .port-content").height(window.innerHeight);
 	$(".inline_section").width(window.innerWidth + 15);
 	$(".horizontal_content").width((window.innerWidth + 15) * 2);
