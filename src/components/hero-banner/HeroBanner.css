@@ -1,17 +1,16 @@
 .App-header{
     background-image: url('../../assets/images/banner.jpg');
-    height: 720px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: -170px 0px;
 }
 .App-header .side-menu {
     background-color: #dec7de;
     background-image: url('../../assets/images/blu-stripes.png');
     background-blend-mode: overlay;
     background-repeat: repeat;
-    height: 720px;
-    /*margin-left: 25%;*/
+    padding-left: 35px;
 }
 .App-header .side-menu .menu-nav span{
     padding-left: 15px;
@@ -24,8 +23,18 @@
 .name-def h1{
     font-size: 45px;
 }
-.social-icons{
+.social-icons, .side-menu{
     display: flex;
+}
+.side-menu .def-section{
+    display: inline-block;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+.menu-nav{
+    position: absolute;
+    top: 15px;
+    left: 35px;
 }
 .social-icons li{
     float: left;

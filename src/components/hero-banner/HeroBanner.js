@@ -1,20 +1,19 @@
-import ReactDom from 'react-dom';
 import React from 'react';
+import {__screenHeight} from '../../models/Dimensions'
 import './HeroBanner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from "styled-components";
-import fluid from "fluid-system";
+import Text from "../Text";
 
-const Text = styled("p")(
-  fluid({
-    cssProperty: "fontSize",
-    scale: "fontSizes"
-  })
-);
+const bannerHeight = {
+  height: __screenHeight()
+};
 
-function HeroBanner() {
+const HeroBanner = props => {
+  var theme = props.apptheme;
+
   return (
-      <header className="App-header">
+      <header className="App-header" style={bannerHeight}>
         <div className="row">
           <div className="social-icons col-md-3">
             <ul>
@@ -24,21 +23,24 @@ function HeroBanner() {
               <li><a href="#"><FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/></a></li>              
             </ul>
           </div>
-          <div className="side-menu col-md-4 offset-md-5">
-          <div className="menu-nav text-left">
-            <FontAwesomeIcon icon="bars" size="sm" className="menu-bar-icon" /><span>MENU</span>
-          </div>
-          <dl className="name-def">
-            <rt>/jim-el/</rt>
-            <dt><h1>gimel</h1></dt>
-            <dd>third alphabet character <br/>
-                in Hebrew and the first <br/>
-                name of a game changer</dd>
-          </dl>
+          <div className="side-menu col-md-5 offset-md-4" style={bannerHeight}>
+            <div className="menu-nav text-left">
+                <a href="#">
+                  <FontAwesomeIcon icon="bars" size="sm" className="menu-bar-icon" /><span>MENU</span>
+                </a>
+            </div>
+              <div className="def-section">
+                <dl className="name-def">
+                  <rt>/jim-el/</rt>
+                  <dt><h1>gimel</h1></dt>
+                  <Text fontSize={[13,20]} color="blue">third alphabet character <br/>
+                      in Hebrew and the first <br/>
+                      name of a game changer</Text>
+                </dl>
+              </div>
           </div>
         </div>
       </header>
   );
 }
-
 export default HeroBanner;
