@@ -5,6 +5,13 @@
     background-attachment: fixed;
     background-position: -170px 0px;
 }
+.App-header .row{
+    margin: 0;
+}
+.main-content{
+    background: #565656;
+    background-blend-mode: overlay;
+}
 .App-header .side-menu {
     background-color: #dec7de;
     background-image: url('../../assets/images/blu-stripes.png');
@@ -15,7 +22,11 @@
 .App-header .side-menu .menu-nav span{
     padding-left: 15px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
+}
+.App-header .side-menu .menu-nav a{
+    text-decoration: none;
+    color: #76323f;
 }
 .name-def{
     text-align: left;
@@ -47,4 +58,10 @@
 }
 .social-icons a{
     color: #f7f7f7;
+}
+.name-def rt{
+    color: #f7f7f7;
+}
+.name-def dt{
+    color: #76323f;
 }

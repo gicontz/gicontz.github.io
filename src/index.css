@@ -39,3 +39,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.main-content {
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+/* Place below always at the very bottom */ 
+
+.sm-scr, .xs-scr {
+  display: none;
+}
+.md-scr {
+  display: none;
+}
+
+@media screen and (max-width: 720px){
+  .lg-scr, .xl-scr{
+    display: none;
+  }
+  .md-scr {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .mobile{
+    display: block;
+  }
+}
