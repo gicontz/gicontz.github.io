@@ -77,7 +77,7 @@ const HeroBanner = props => {
                 <dl className="name-def">
                   <rt>/jim-el/</rt>
                   <dt><h1>gimel</h1></dt>
-                  <Text fontSize={[13,20]} color="#565656">third alphabet character <br/>
+                  <Text fontSize={[1,2]} color="#565656">third alphabet character <br/>
                       in Hebrew and the first <br/>
                       name of a game changer</Text>
                 </dl>

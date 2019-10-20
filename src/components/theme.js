@@ -1,5 +1,5 @@
-export default {
-    breakpoints: [768, 1024],
+const theme = {
+    breakpoints: [320, 768, 1024],
     fontSizes: ['13px', '16px', '19px', '23px', '27px', '33px', '39px', '47px'],
     _fluidSystem: {
       startingWidth: 320
@@ -13,3 +13,9 @@ export default {
     },
     spaces: [0, 2, 10, 15, 25, 30, 50]
   };
+
+
+theme.breakpoints.fluidStart = "320px";
+
+
+export default theme;
