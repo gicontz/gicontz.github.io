@@ -3,11 +3,11 @@ import { __screenHeight } from '../../models/Dimensions'
 import './HeroBanner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from "styled-components";
+import Fullpage from "../fullpage/fullpage"
 import Text from "../Text";
 
 /***** COMPONENTS  *****/
 import Profile from '../profile/Profile'
-import TestScroll from '../TestScroll'
 
 const items = [{
     key: '1',
@@ -52,8 +52,7 @@ const HeroBanner = props => {
       <header className="App-header" style={bannerHeight}>
         <div className="row">
           <div className="main-content col-md-7">
-          <Profile />
-          <TestScroll/>
+          <Fullpage />
             <div className="social-icons">
               <ul>
                 <li><a href="#"><FontAwesomeIcon icon={['fab', 'facebook']} size="2x"/></a></li>

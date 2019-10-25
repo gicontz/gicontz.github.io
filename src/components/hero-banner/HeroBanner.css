@@ -9,8 +9,8 @@
     margin: 0;
 }
 .main-content{
-    background: #565656;
     background-blend-mode: overlay;
+    padding: 0;
 }
 .App-header .side-menu {
     background-color: #dec7de;
@@ -46,6 +46,10 @@
     position: absolute;
     top: 15px;
     left: 35px;
+}
+.social-icons {
+    position: fixed;
+    bottom: 0;
 }
 .social-icons li{
     float: left;

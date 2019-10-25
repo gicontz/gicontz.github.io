@@ -19,6 +19,8 @@ function Profile() {
         leave={{ transform: 'translate3d(0,-40px,0)' }}>
         {item => props => <div style={props}>{item.text}</div>}
         </Transition>
+
+        <h1>PROFILE</h1>
     </div>
   );
 }
