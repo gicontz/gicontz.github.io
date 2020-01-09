@@ -61,6 +61,9 @@
     align-self: flex-end;
 }
 .social-icons a{
+    color: #c09f80;
+}
+.social-icons a:hover{
     color: #f7f7f7;
 }
 .name-def rt{

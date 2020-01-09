@@ -12,11 +12,11 @@ library.add(fab, faCheckSquare, faCoffee, faBars);
 const App = props => {
   return (
     <ThemeProvider theme={theme}>
-    {
+    
       <div className="App">
         <HeroBanner apptheme={theme}/>
       </div>
-    }
+    
     </ThemeProvider>
   );
 }

@@ -20,7 +20,7 @@ function Profile() {
         {item => props => <div style={props}>{item.text}</div>}
         </Transition>
 
-        <h1>PROFILE</h1>
+        <h2>PROFILE</h2>
     </div>
   );
 }
