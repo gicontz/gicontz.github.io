@@ -28,6 +28,9 @@
     text-decoration: none;
     color: #76323f;
 }
+.def-section h1{
+    font-family: 'Merriweather';
+}
 .name-def{
     text-align: left;
 }

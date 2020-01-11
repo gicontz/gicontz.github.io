@@ -67,8 +67,9 @@ code {
 }
 
 #fullpage .section{
-  padding: 30px;
+  padding: 30px 30px 30px 70px;
   text-align: left;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 720px){

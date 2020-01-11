@@ -12,7 +12,7 @@ function Profile() {
         <p>
           Application Development runs in my veins.<br/>
           Die-hard fan of Google Technology. Yes, a Web Developer<br/>
-          But if you don't ask, I still Love Performance Arts <br/>
+          But if you don't ask, I love Performance Arts <br/>
           </p>
         </div>
     </div>
