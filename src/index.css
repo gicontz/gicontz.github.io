@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Sailec';
+  src: url('./assets/fonts/SailecRegular.ttf') format('truetype');
+  font-weight: lighter;
+}
+@font-face {
   font-family: 'Merriweather';
   src: url('./assets/fonts/Merriweather-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -26,14 +31,14 @@
 
 body {
   margin: 0;
-  font-family: 'Oxygen', BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Sailec', BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5.h6{
-  font-family: 'Merriweather', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Sailec', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -61,6 +66,11 @@ code {
   display: none;
 }
 
+#fullpage .section{
+  padding: 30px;
+  text-align: left;
+}
+
 @media screen and (max-width: 720px){
   .lg-scr, .xl-scr{
     display: none;
@@ -75,3 +85,4 @@ code {
     display: block;
   }
 }
+

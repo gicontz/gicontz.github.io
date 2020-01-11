@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 import { typography } from "styled-system";
 import fluid from "fluid-system";

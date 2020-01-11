@@ -6,8 +6,10 @@ import Profile from '../profile/Profile'
 const Fullpage = () => (
     <ReactFullpage
     //fullpage options
+    licenseKey = {'YOUR_KEY_HERE'}
+    easingcss3 = {'cubic-bezier(0.175, 0.01, 0.70, 0.075)'}
     scrollingSpeed = {1000} /* Options here */
-    sectionsColor = {['transparent', '#f2f2f2', '#f2f2f2', 'f2f2f2', '#f2f2f2']}
+    sectionsColor = {['transparent', '#ffffff', '#ffffff', 'ffffff', '#ffffff']}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>

@@ -1,9 +1,9 @@
-.App-header{
-    background-image: url('../../assets/images/banner.jpg');
+#fullpage{
+    background-image: url(../../assets/images/banner.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: -170px 0px;
+    background-position: -150px 0;
 }
 .App-header .row{
     margin: 0;
@@ -71,4 +71,8 @@
 }
 .name-def dt{
     color: #76323f;
+}
+
+Profile{
+    display: flex;
 }

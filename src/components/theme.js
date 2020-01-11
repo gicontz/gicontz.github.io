@@ -1,6 +1,6 @@
 const theme = {
-  breakpoints: ["320px", "768px", "1024px"],
-  fontSizes: ['10px', '10px', '16px'],
+  breakpoints: ["768px", "1024px"],
+  fontSizes: [10, 13, 16, 19, 23, 27, 33, 39],
   _fluidSystem: {
     startingWidth: 320
   },
