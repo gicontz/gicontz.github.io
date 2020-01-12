@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gicontz.github.io/static/css/main.3ddae957.chunk.css",
-    "main.js": "/gicontz.github.io/static/js/main.5b0223cd.chunk.js",
-    "main.js.map": "/gicontz.github.io/static/js/main.5b0223cd.chunk.js.map",
+    "main.js": "/gicontz.github.io/static/js/main.59b6551f.chunk.js",
+    "main.js.map": "/gicontz.github.io/static/js/main.59b6551f.chunk.js.map",
     "runtime-main.js": "/gicontz.github.io/static/js/runtime-main.2e33f7a5.js",
     "runtime-main.js.map": "/gicontz.github.io/static/js/runtime-main.2e33f7a5.js.map",
     "static/css/2.76163712.chunk.css": "/gicontz.github.io/static/css/2.76163712.chunk.css",
     "static/js/2.24f8a198.chunk.js": "/gicontz.github.io/static/js/2.24f8a198.chunk.js",
     "static/js/2.24f8a198.chunk.js.map": "/gicontz.github.io/static/js/2.24f8a198.chunk.js.map",
     "index.html": "/gicontz.github.io/index.html",
-    "precache-manifest.3ce276380f6cc55eeba026963c49ae32.js": "/gicontz.github.io/precache-manifest.3ce276380f6cc55eeba026963c49ae32.js",
+    "precache-manifest.96a01f8759175775c019b094b070e5d9.js": "/gicontz.github.io/precache-manifest.96a01f8759175775c019b094b070e5d9.js",
     "service-worker.js": "/gicontz.github.io/service-worker.js",
     "static/css/2.76163712.chunk.css.map": "/gicontz.github.io/static/css/2.76163712.chunk.css.map",
     "static/css/main.3ddae957.chunk.css.map": "/gicontz.github.io/static/css/main.3ddae957.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.76163712.chunk.css",
     "static/js/2.24f8a198.chunk.js",
     "static/css/main.3ddae957.chunk.css",
-    "static/js/main.5b0223cd.chunk.js"
+    "static/js/main.59b6551f.chunk.js"
   ]
 }
