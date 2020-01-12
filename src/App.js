@@ -5,6 +5,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faBars } from '@fortawesome/free-solid-svg-icons';
 import { ThemeProvider } from 'styled-components';
 import theme from "./components/theme";
+import "animate.css/animate.min.css";
 import './App.css';
 
 library.add(fab, faCheckSquare, faCoffee, faBars);

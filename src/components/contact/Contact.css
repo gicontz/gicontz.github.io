@@ -1,0 +1,46 @@
+#contact input, #contact #message {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 75%;
+    margin-bottom: 20px;
+}
+.heading{
+    margin-bottom: 50px;
+}
+.heading h4{
+    font-weight: 900;
+}
+#contact .email {
+    margin-left: 15%;
+}
+#contact .email input {
+    width: 85%;
+}
+.form-group .label{
+    font-size: 10px;
+    font-weight: 700;
+}
+.message-area {
+    margin-left: 25%;
+    width: 70%;
+}
+#contact .message-area #message {
+    width: 100%;
+    max-height: 100px;
+    height: 30px;
+    resize: none;
+    overflow-y: scroll;
+}
+.message-area{
+    display: flex;
+}
+#contact .message-area .form-group {
+    width: 100%;
+}
+#contact .message-area .submit {
+    width: 20%;
+    border: 0;
+    height: 55px;
+}

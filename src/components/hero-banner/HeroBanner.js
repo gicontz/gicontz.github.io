@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { __screenHeight } from '../../models/Dimensions'
-import './HeroBanner.css';
+import { useSpring, animated as a, interpolate } from 'react-spring'
+import './HeroBanner.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from "styled-components";
 import Fullpage from "../fullpage/fullpage"
@@ -8,19 +9,6 @@ import FluidText from "../FluidText";
 
 /***** COMPONENTS  *****/
 import Profile from '../profile/Profile'
-
-const items = [{
-    key: '1',
-    text: '1'
-},
-{
-    key: '2',
-    text: '2'
-},
-{
-    key: '3',
-    text: '3'
-}];
 
 const bannerHeight = {
   height: __screenHeight()
@@ -45,9 +33,7 @@ const __menus = sections.map((section) =>
   </li>
 );
 
-const HeroBanner = props => {
-  var theme = props.apptheme;
-
+function HeroBanner(){
   return (
       <header className="App-header" style={bannerHeight}>
         <div className="row">
@@ -55,10 +41,10 @@ const HeroBanner = props => {
           <Fullpage />
             <div className="social-icons">
               <ul>
-                <li><a href="#"><FontAwesomeIcon icon={['fab', 'facebook']} size="2x"/></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={['fab', 'twitter']} size="2x"/></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={['fab', 'github']} size="2x"/></a></li>
-                <li><a href="#"><FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/></a></li>              
+                <li><a href="https://fb.com/gicontz" target='_blank'><FontAwesomeIcon icon={['fab', 'facebook']} size="2x"/></a></li>
+                <li><a href="https://twitter.com/gimickan" target='_blank'><FontAwesomeIcon icon={['fab', 'twitter']} size="2x"/></a></li>
+                <li><a href="https://github.com/gicontz" target='_blank'><FontAwesomeIcon icon={['fab', 'github']} size="2x"/></a></li>
+                <li><a href="https://instagram.com/gimickan" target='_blank'><FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/></a></li>              
               </ul>
             </div>
           </div>
