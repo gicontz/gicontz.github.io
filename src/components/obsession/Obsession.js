@@ -10,12 +10,16 @@ class Obsession extends React.Component {
         this.state = { index: 0, prevX: 0 };
     }
 
-    hobbies = ['React', 'ReactNative', 'CSS', 'SASS', 'Performance Tuning', 'Adobe Premier', 'Angular', 'Shell Scripts', 'Game Development']
+    hobbies = ['React', 'ReactNative', 'CSS', 
+    'SASS', 'Performance Tuning', 
+    'Adobe Premier', 'Angular', 'Shell Scripts', 
+    'Game Development', 'SQL', 'C#.Net', 'Windows Presentation Foundation',
+    'Javascript', 'Internet of Things']
 
     __mouseMove(e){
         if(this.state.prevX > (e.screenX + 20) || this.state.prevX < (e.screenX - 20)){
             this.setState( { prevX: e.screenX });
-            this.setState({ index: Math.floor(Math.random() * Math.floor(this.hobbies.length - 1)) } );
+            this.setState({ index: Math.floor(Math.random() * Math.floor(this.hobbies.length)) } );
         }
     }
 

@@ -9,7 +9,7 @@ const Fullpage = () => (
     <ReactFullpage
     //fullpage options
     licenseKey = {'g1wk&AR^c1'}
-    easingcss3 = {'cubic-bezier(0.875, 0.01, 0.70, 0.075)'}
+    easingcss3 = {'cubic-bezier(1, 0.01, 0.70, 0.075)'}
     scrollingSpeed = {1000} /* Options here */
     sectionsColor = {['transparent', '#ffffff', '#ffffff', 'ffffff', '#ffffff']}
     anchor = {['banner', 'profile', 'hobby']}
