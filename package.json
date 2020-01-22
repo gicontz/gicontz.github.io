@@ -17,6 +17,7 @@
     "react": "^16.10.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.10.2",
+    "react-ga": "^2.7.0",
     "react-scripts": "3.2.0",
     "react-spring": "^8.0.27",
     "styled-components": "^4.4.0",

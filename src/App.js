@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import HeroBanner from './components/hero-banner/HeroBanner';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -9,6 +10,9 @@ import "animate.css/animate.min.css";
 import './App.css';
 
 library.add(fab, faCheckSquare, faCoffee, faBars);
+
+const trackingId = "UA-156647788-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
 
 const App = props => {
   return (
