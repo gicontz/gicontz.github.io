@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/gicontz.github.io/static/css/main.ca4a5d5e.chunk.css",
-    "main.js": "/gicontz.github.io/static/js/main.59b6551f.chunk.js",
-    "main.js.map": "/gicontz.github.io/static/js/main.59b6551f.chunk.js.map",
+    "main.css": "/gicontz.github.io/static/css/main.af8f7f04.chunk.css",
+    "main.js": "/gicontz.github.io/static/js/main.4513ad30.chunk.js",
+    "main.js.map": "/gicontz.github.io/static/js/main.4513ad30.chunk.js.map",
     "runtime-main.js": "/gicontz.github.io/static/js/runtime-main.2e33f7a5.js",
     "runtime-main.js.map": "/gicontz.github.io/static/js/runtime-main.2e33f7a5.js.map",
     "static/css/2.76163712.chunk.css": "/gicontz.github.io/static/css/2.76163712.chunk.css",
-    "static/js/2.24f8a198.chunk.js": "/gicontz.github.io/static/js/2.24f8a198.chunk.js",
-    "static/js/2.24f8a198.chunk.js.map": "/gicontz.github.io/static/js/2.24f8a198.chunk.js.map",
+    "static/js/2.a2fe75af.chunk.js": "/gicontz.github.io/static/js/2.a2fe75af.chunk.js",
+    "static/js/2.a2fe75af.chunk.js.map": "/gicontz.github.io/static/js/2.a2fe75af.chunk.js.map",
     "index.html": "/gicontz.github.io/index.html",
-    "precache-manifest.26d538b1fc002bb1d98f769f78a1a965.js": "/gicontz.github.io/precache-manifest.26d538b1fc002bb1d98f769f78a1a965.js",
+    "precache-manifest.804f7af56122f01d352bc8f586c94cf8.js": "/gicontz.github.io/precache-manifest.804f7af56122f01d352bc8f586c94cf8.js",
     "service-worker.js": "/gicontz.github.io/service-worker.js",
     "static/css/2.76163712.chunk.css.map": "/gicontz.github.io/static/css/2.76163712.chunk.css.map",
-    "static/css/main.ca4a5d5e.chunk.css.map": "/gicontz.github.io/static/css/main.ca4a5d5e.chunk.css.map",
+    "static/css/main.af8f7f04.chunk.css.map": "/gicontz.github.io/static/css/main.af8f7f04.chunk.css.map",
     "static/media/index.css": "/gicontz.github.io/static/media/SailecRegular.c62aabb9.ttf",
-    "static/media/HeroBanner.css": "/gicontz.github.io/static/media/banner.9c4fdabf.JPG"
+    "static/media/HeroBanner.css": "/gicontz.github.io/static/media/banner.9c4fdabf.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2e33f7a5.js",
     "static/css/2.76163712.chunk.css",
-    "static/js/2.24f8a198.chunk.js",
-    "static/css/main.ca4a5d5e.chunk.css",
-    "static/js/main.59b6551f.chunk.js"
+    "static/js/2.a2fe75af.chunk.js",
+    "static/css/main.af8f7f04.chunk.css",
+    "static/js/main.4513ad30.chunk.js"
   ]
 }
