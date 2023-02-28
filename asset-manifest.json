@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gicontz.github.io/static/css/main.11d35aad.css",
+    "main.js": "/gicontz.github.io/static/js/main.5898d0b8.js",
+    "static/js/787.a6d1328f.chunk.js": "/gicontz.github.io/static/js/787.a6d1328f.chunk.js",
+    "static/media/banner.png": "/gicontz.github.io/static/media/banner.e72f623e8159cfae976e.png",
+    "static/media/dev.jpg": "/gicontz.github.io/static/media/dev.a8f1e89de0731cd53a2a.jpg",
+    "static/media/dive.jpg": "/gicontz.github.io/static/media/dive.856992f17dafce19bfc8.jpg",
+    "static/media/Merriweather-Regular.ttf": "/gicontz.github.io/static/media/Merriweather-Regular.55c73e48e04ec926ebfe.ttf",
+    "static/media/Merriweather-Bold.ttf": "/gicontz.github.io/static/media/Merriweather-Bold.7b45103bea0f9642b818.ttf",
+    "static/media/SailecRegular.ttf": "/gicontz.github.io/static/media/SailecRegular.f198366c4c446a4c3fb3.ttf",
+    "static/media/Oxygen-Bold.ttf": "/gicontz.github.io/static/media/Oxygen-Bold.8c64e0603f80aa73a884.ttf",
+    "static/media/Oxygen-Regular.ttf": "/gicontz.github.io/static/media/Oxygen-Regular.9d375dd5d21ee7c8c01d.ttf",
+    "static/media/Oxygen-Light.ttf": "/gicontz.github.io/static/media/Oxygen-Light.47a32624bcaeb6f08ac4.ttf",
+    "index.html": "/gicontz.github.io/index.html",
+    "main.11d35aad.css.map": "/gicontz.github.io/static/css/main.11d35aad.css.map",
+    "main.5898d0b8.js.map": "/gicontz.github.io/static/js/main.5898d0b8.js.map",
+    "787.a6d1328f.chunk.js.map": "/gicontz.github.io/static/js/787.a6d1328f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11d35aad.css",
+    "static/js/main.5898d0b8.js"
+  ]
+}
