@@ -1,6 +1,6 @@
 {
-  "name": "gicontz-portfolio",
-  "homepage": "https://gicontz.github.io/gicontz.github.io",
+  "name": "gicontz.github.io",
+  "homepage": "https://gicontz.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
