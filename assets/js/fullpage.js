@@ -20,10 +20,11 @@
       if (!this.root) throw new Error('SnapPage: root not found');
       this.sections = Array.from(this.root.querySelectorAll('[data-section]'));
       this.anchors = this.sections.map((s, i) => s.dataset.anchor || `section-${i + 1}`);
-      this.options = Object.assign({ duration: 800, onChange: null }, options);
+      this.options = Object.assign({ duration: 800, onChange: null, touchThreshold: 120, wheelRest: 320 }, options);
       this.index = 0;
       this.animating = false;
       this.touchStartY = null;
+      this.interceptors = {}; // { sectionIndex: fn(dir) -> true if it consumed the scroll }
 
       this._buildNav();
       this._bind();
@@ -52,23 +53,41 @@
       this.nav = nav;
     }
 
+    // Register a per-section scroll handler. When the section is active, it
+    // gets first crack at each navigation attempt; returning true consumes
+    // the scroll (no section change), false lets navigation proceed.
+    intercept(index, fn) { this.interceptors[index] = fn; }
+
+    _nav(dir) {
+      const fn = this.interceptors[this.index];
+      if (fn && fn(dir)) return; // consumed by the section (e.g. carousel)
+      this.goTo(this.index + dir);
+    }
+
     _bind() {
-      // Wheel
+      // Wheel — one continuous gesture = one move. Trackpads emit a long tail
+      // of inertia events after a flick; we keep the lock alive until scrolling
+      // has rested (idle gap) so momentum can't auto-flip through pages.
       let wheelLock = false;
+      let restTimer = null;
+      const rest = () => {
+        clearTimeout(restTimer);
+        restTimer = setTimeout(() => { wheelLock = false; }, this.options.wheelRest);
+      };
       this.root.addEventListener('wheel', (e) => {
         if (REDUCED) return; // let native scroll happen
         e.preventDefault();
-        if (wheelLock || this.animating) return;
-        if (Math.abs(e.deltaY) < 12) return;
+        if (Math.abs(e.deltaY) < 8) return;
+        if (wheelLock || this.animating) { rest(); return; } // still gliding → hold the lock
         wheelLock = true;
-        setTimeout(() => { wheelLock = false; }, this.options.duration * 0.6);
-        this.goTo(this.index + (e.deltaY > 0 ? 1 : -1));
+        this._nav(e.deltaY > 0 ? 1 : -1);
+        rest();
       }, { passive: false });
 
       // Keyboard
       window.addEventListener('keydown', (e) => {
-        if (['ArrowDown', 'PageDown'].includes(e.key)) { e.preventDefault(); this.goTo(this.index + 1); }
-        else if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); this.goTo(this.index - 1); }
+        if (['ArrowDown', 'PageDown'].includes(e.key)) { e.preventDefault(); this._nav(1); }
+        else if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); this._nav(-1); }
         else if (e.key === 'Home') { e.preventDefault(); this.goTo(0); }
         else if (e.key === 'End') { e.preventDefault(); this.goTo(this.sections.length - 1); }
       });
@@ -78,7 +97,7 @@
       this.root.addEventListener('touchend', (e) => {
         if (this.touchStartY === null) return;
         const dy = this.touchStartY - e.changedTouches[0].clientY;
-        if (Math.abs(dy) > 50) this.goTo(this.index + (dy > 0 ? 1 : -1));
+        if (Math.abs(dy) > this.options.touchThreshold) this._nav(dy > 0 ? 1 : -1);
         this.touchStartY = null;
       }, { passive: true });
 

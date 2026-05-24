@@ -15,30 +15,33 @@
 <body>
   <!-- Top bar -->
   <header class="topbar">
-    <a class="brand" href="#home"><b>Gim</b> Contillo</a>
+    <a class="brand" href="#home"><b>gi</b>contz</a>
     <span class="topbar__meta">Software Engineer · Consultant</span>
   </header>
-  <span class="footnote">© 2026 · gim-consultancy</span>
+  <span class="footnote">© 2026 · Gim Consulting</span>
 
   <main class="fp-root" id="fp">
     <!-- 1 · Hero -->
     <section class="fp-section hero" data-section data-anchor="home" data-nav-label="Home">
       <figure class="hero__media">
-        <img src="assets/img/hero.jpg" alt="Portrait of Gim Contillo" />
+        <picture>
+          <source media="(min-width: 761px)" srcset="assets/img/desktop-hero.jpg" />
+          <img src="assets/img/hero.jpg" alt="Portrait of Gim Contillo" />
+        </picture>
       </figure>
       <div class="hero__panel">
         <div class="hero__panel-inner">
           <span class="eyebrow fade">Portfolio</span>
-          <h1 class="hero__name fade">Gim&nbsp;Contillo</h1>
-          <p class="hero__def fade">
-            <span class="hero__phon">/jim-el/</span>
+          <h1 class="hero__head fade">
+            <span class="hero__ipa">/jim-el/</span>
             <span class="hero__word">gimel</span>
+          </h1>
+          <p class="hero__def fade">
             <span class="hero__gloss">the third letter of the Hebrew alphabet — and the first name of a game changer.</span>
           </p>
           <span class="hero__role fade">Software Engineer &amp; Technical Consultant</span>
           <div class="hero__cta fade">
             <a class="btn" href="#contact">Get in touch</a>
-            <a class="link-quiet" href="#work">Selected work</a>
           </div>
         </div>
       </div>
@@ -48,9 +51,10 @@
     <!-- 2 · About -->
     <section class="fp-section fp-section--alt" data-section data-anchor="about" data-nav-label="About">
       <div class="fp-inner two-col">
-        <div class="fade">
+        <div class="fade about-head" data-about>
           <span class="eyebrow">About</span>
-          <h2 class="sec-title">A builder who<br />cares about craft.</h2>
+          <span class="about-sub" aria-hidden="true"></span>
+          <h2 class="sec-title"><span class="about-title">A builder who<br />cares about craft.</span></h2>
         </div>
         <div class="fade">
           <p class="lead">I'm a software engineer with a consulting mindset — equally comfortable shaping system architecture and sweating the pixels. I partner with teams to ship maintainable products that hold up in production.</p>
@@ -59,92 +63,143 @@
       </div>
     </section>
 
-    <!-- 3 · Expertise -->
-    <section class="fp-section" data-section data-anchor="expertise" data-nav-label="Expertise">
-      <div class="fp-inner">
-        <span class="eyebrow fade">What I do</span>
-        <h2 class="sec-title fade">Expertise</h2>
-        <div class="cards">
-          <div class="card fade">
-            <span class="card__no">01</span>
-            <h3>Web Engineering</h3>
-            <p>Full-stack development — APIs, services, and responsive front-ends built to last.</p>
-          </div>
-          <div class="card fade">
-            <span class="card__no">02</span>
-            <h3>Architecture</h3>
-            <p>System design, data modeling, and infrastructure that scales without surprises.</p>
-          </div>
-          <div class="card fade">
-            <span class="card__no">03</span>
-            <h3>Consulting</h3>
-            <p>Technical guidance, audits, and hands-on delivery for teams that need momentum.</p>
-          </div>
+    <!-- 3 · Expertise (scroll-hijacked carousel) -->
+    <section class="fp-section expertise" data-section data-anchor="expertise" data-nav-label="Expertise">
+      <div class="carousel" data-carousel>
+        <div class="carousel__track">
+          <article class="slide" style="--img: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1920&q=80')">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="eyebrow">What I do</span>
+              <span class="slide__no">01</span>
+              <h2 class="slide__title">Web Engineering</h2>
+              <p class="slide__desc">Full-stack development — APIs, services, and responsive front-ends built to last.</p>
+            </div>
+          </article>
+          <article class="slide" style="--img: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80')">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="eyebrow">What I do</span>
+              <span class="slide__no">02</span>
+              <h2 class="slide__title">Architecture</h2>
+              <p class="slide__desc">System design, data modeling, and infrastructure that scales without surprises.</p>
+            </div>
+          </article>
+          <article class="slide" style="--img: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80')">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="eyebrow">What I do</span>
+              <span class="slide__no">03</span>
+              <h2 class="slide__title">Consulting</h2>
+              <p class="slide__desc">Technical guidance, audits, and hands-on delivery for teams that need momentum.</p>
+            </div>
+          </article>
         </div>
+        <div class="carousel__dots" role="tablist" aria-label="Expertise slides"></div>
       </div>
     </section>
 
-    <!-- 4 · Experience -->
-    <section class="fp-section fp-section--alt" data-section data-anchor="experience" data-nav-label="Experience">
-      <div class="fp-inner">
-        <span class="eyebrow fade">Track record</span>
-        <h2 class="sec-title fade">Experience</h2>
-        <div class="timeline">
-          <div class="tl-item fade">
-            <div class="tl-when">Present</div>
-            <div>
-              <div class="tl-role">Software Engineer &amp; Consultant</div>
-              <div class="tl-org">Independent / Gim Consultancy</div>
-              <p class="tl-desc">Partnering with teams to architect, build, and ship production web platforms.</p>
+    <!-- 4 · Experience (scroll-hijacked carousel, color-touched) -->
+    <section class="fp-section fp-section--alt exp-carousel" data-section data-anchor="experience" data-nav-label="Experience">
+      <div class="carousel" data-carousel>
+        <div class="carousel__track">
+          <article class="slide" style="--tone: rgba(154,106,60,0.16)">
+            <span class="slide__bignum" aria-hidden="true">01</span>
+            <div class="slide__content">
+              <span class="eyebrow">Present</span>
+              <h2 class="slide__title">Senior Fullstack Engineer</h2>
+              <div class="exp-org">Devy Pty. Ltd. · 2024 – Present</div>
+              <p class="slide__desc">Leading a team of five (Devs, QA, DevOps) as SCRUM Master and acting architect — shaping the tech stack and shipping fullstack products with end-to-end payment integrations.</p>
+              <div class="tl-tags">
+                <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">NestJS / Node</span><span class="tag">Azure</span><span class="tag">Stripe</span><span class="tag">AWS</span>
+              </div>
             </div>
-          </div>
-          <div class="tl-item fade">
-            <div class="tl-when">Previously</div>
-            <div>
-              <div class="tl-role">Full-Stack Engineer</div>
-              <div class="tl-org">Selected engagements</div>
-              <p class="tl-desc">Delivered APIs, data services, and front-end products across multiple domains.</p>
+          </article>
+          <article class="slide" style="--tone: rgba(124,84,48,0.16)">
+            <span class="slide__bignum" aria-hidden="true">02</span>
+            <div class="slide__content">
+              <span class="eyebrow">Previously</span>
+              <h2 class="slide__title">Senior &amp; Lead Fullstack Engineer</h2>
+              <div class="exp-org">Cloud Employee APAC · Samsung R&amp;D PH · 2020 – 2023</div>
+              <p class="slide__desc">Led and built E2E applications — realtime charts, reservations, data visualization, and learning portals — alongside retail platforms, across the MERN stack with rigorous automated testing.</p>
+              <div class="tl-tags">
+                <span class="tag">MERN</span><span class="tag">Redux-Saga</span><span class="tag">NestJS</span><span class="tag">AWS</span><span class="tag">Jenkins</span><span class="tag">Cypress / Playwright</span>
+              </div>
             </div>
-          </div>
-          <div class="tl-item fade">
-            <div class="tl-when">Foundation</div>
-            <div>
-              <div class="tl-role">Engineering &amp; Open Source</div>
-              <div class="tl-org">Various</div>
-              <p class="tl-desc">Built tooling and contributed to projects that sharpened the fundamentals.</p>
+          </article>
+          <article class="slide" style="--tone: rgba(26,25,23,0.10)">
+            <span class="slide__bignum" aria-hidden="true">03</span>
+            <div class="slide__content">
+              <span class="eyebrow">Foundation</span>
+              <h2 class="slide__title">Application Developer &amp; Support</h2>
+              <div class="exp-org">Accenture, Inc. · 2018 – 2020</div>
+              <p class="slide__desc">Cut my teeth on enterprise Oracle Retail systems — database administration, performance tuning, and roster application development that built the fundamentals.</p>
+              <div class="tl-tags">
+                <span class="tag">Oracle Retail</span><span class="tag">MSSQL / PostgreSQL</span><span class="tag">C#.Net</span><span class="tag">Angular</span><span class="tag">Node-Express</span>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
+        <div class="carousel__dots" role="tablist" aria-label="Experience slides"></div>
       </div>
     </section>
 
-    <!-- 5 · Work -->
-    <section class="fp-section" data-section data-anchor="work" data-nav-label="Work">
-      <div class="fp-inner">
-        <span class="eyebrow fade">Selected work</span>
-        <h2 class="sec-title fade">Recent projects</h2>
-        <div class="work">
-          <article class="work-card fade">
-            <h3>Platform Engineering</h3>
-            <p>Architecture and delivery for a multi-service web platform.</p>
-            <div class="work-card__tags"><span class="tag">Architecture</span><span class="tag">APIs</span><span class="tag">Web</span></div>
+    <!-- 5 · Approach (carousel: frozen header, changing image + content) -->
+    <section class="fp-section expertise approach-carousel" data-section data-anchor="approach" data-nav-label="Approach">
+      <div class="approach-frozen fade">
+        <span class="eyebrow">How I work</span>
+        <h2 class="approach-frozen__title">From MVP to scale —<br />a one-person team.</h2>
+        <p class="approach-frozen__lead">Most of my work is under NDA, so instead of logos: here's the lifecycle I own end to end, solo.</p>
+      </div>
+      <div class="carousel" data-carousel>
+        <div class="carousel__track">
+          <article class="slide" style="--img: radial-gradient(90% 70% at 78% 35%, rgba(154,106,60,0.30), transparent 60%), linear-gradient(155deg, #232019 0%, #131210 100%)">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="slide__no">01</span>
+              <h3 class="slide__title">MVP</h3>
+              <p class="slide__desc">From idea to a shippable product — scoping, architecture decisions, and the first working build that proves the concept.</p>
+              <div class="tl-tags"><span class="tag">Scoping</span><span class="tag">Architecture</span><span class="tag">Prototyping</span></div>
+            </div>
           </article>
-          <article class="work-card fade">
-            <h3>Data &amp; Reporting</h3>
-            <p>Pipelines and dashboards turning raw data into decisions.</p>
-            <div class="work-card__tags"><span class="tag">Data</span><span class="tag">Node</span><span class="tag">Viz</span></div>
+          <article class="slide" style="--img: radial-gradient(85% 70% at 20% 42%, rgba(124,84,48,0.32), transparent 62%), linear-gradient(155deg, #1e1b18 0%, #100f0d 100%)">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="slide__no">02</span>
+              <h3 class="slide__title">Production</h3>
+              <p class="slide__desc">Hardening for launch — payments, auth, CI/CD, and the polish that makes it production-grade.</p>
+              <div class="tl-tags"><span class="tag">CI/CD</span><span class="tag">Payments</span><span class="tag">Go-live</span></div>
+            </div>
           </article>
-          <article class="work-card fade">
-            <h3>Product Front-Ends</h3>
-            <p>Polished, accessible interfaces built for production.</p>
-            <div class="work-card__tags"><span class="tag">Front-end</span><span class="tag">UX</span></div>
+          <article class="slide" style="--img: radial-gradient(95% 80% at 85% 68%, rgba(154,106,60,0.24), transparent 60%), linear-gradient(155deg, #20211e 0%, #121310 100%)">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="slide__no">03</span>
+              <h3 class="slide__title">Maintenance</h3>
+              <p class="slide__desc">Owning what ships — monitoring, fixes, and steady iteration with no handoff gaps.</p>
+              <div class="tl-tags"><span class="tag">Monitoring</span><span class="tag">Support</span><span class="tag">Iteration</span></div>
+            </div>
           </article>
-          <article class="work-card fade">
-            <h3>Consulting Engagements</h3>
-            <p>Audits, technical direction, and hands-on delivery.</p>
-            <div class="work-card__tags"><span class="tag">Consulting</span><span class="tag">Delivery</span></div>
+          <article class="slide" style="--img: radial-gradient(85% 70% at 25% 30%, rgba(124,84,48,0.30), transparent 60%), linear-gradient(155deg, #1b1c20 0%, #0f1012 100%)">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="slide__no">04</span>
+              <h3 class="slide__title">Scaling</h3>
+              <p class="slide__desc">Growing without rewrites — performance, infrastructure, and structure that holds up under load.</p>
+              <div class="tl-tags"><span class="tag">Performance</span><span class="tag">Infra</span><span class="tag">Reliability</span></div>
+            </div>
+          </article>
+          <article class="slide" style="--img: radial-gradient(100% 80% at 68% 48%, rgba(154,106,60,0.30), transparent 62%), linear-gradient(155deg, #221c17 0%, #100d0b 100%)">
+            <div class="slide__scrim"></div>
+            <div class="slide__content">
+              <span class="slide__no">05</span>
+              <h3 class="slide__title">AI-Augmented Delivery</h3>
+              <p class="slide__desc">Orchestrating AI agents to move faster without losing the thread — managing context across multiple projects and teams so decisions and conventions carry over instead of being re-litigated. The throughput of a team, kept coherent by one engineer.</p>
+              <div class="tl-tags"><span class="tag">AI Agents</span><span class="tag">Context Management</span><span class="tag">Multi-Project</span><span class="tag">Orchestration</span></div>
+            </div>
           </article>
         </div>
+        <div class="carousel__dots" role="tablist" aria-label="Approach slides"></div>
       </div>
     </section>
 
@@ -164,9 +219,23 @@
   </main>
 
   <script src="assets/js/fullpage.js"></script>
+  <script src="assets/js/about.js"></script>
+  <script src="assets/js/carousel.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      new SnapPage('#fp', { duration: 800 });
+      const fp = new SnapPage('#fp', { duration: 800 });
+      Carousels.init(fp);
+
+      // Mobile: offset the Approach slide content to sit 70px below the frozen header.
+      (function () {
+        const sec = document.querySelector('.approach-carousel');
+        const header = sec && sec.querySelector('.approach-frozen');
+        if (!sec || !header) return;
+        const setOffset = () => sec.style.setProperty('--approach-offset', (header.offsetHeight + 70) + 'px');
+        setOffset();
+        window.addEventListener('resize', setOffset);
+        window.addEventListener('load', setOffset);
+      })();
     });
   </script>
 </body>
