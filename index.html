@@ -144,7 +144,34 @@
       </div>
     </section>
 
-    <!-- 5 · Approach (carousel: frozen header, changing image + content) -->
+    <!-- 5 · Companies (marquee with center spotlight) -->
+    <section class="fp-section companies" data-section data-anchor="companies" data-nav-label="Companies">
+      <div class="companies__head">
+        <span class="eyebrow fade">Worked with</span>
+        <h2 class="sec-title fade">Companies along the way.</h2>
+        <p class="lead fade">Building, shipping, and shaping engineering at established teams and growing startups.</p>
+      </div>
+      <div class="companies-marquee" data-marquee>
+        <div class="companies-marquee__track">
+          <!-- Placeholder cards: replace inner <span> with <img src="assets/img/logos/<name>.svg" alt="..."/> when real logos arrive -->
+          <article class="company-card"><img src="assets/img/companies/accenture.svg" alt="Accenture" /></article>
+          <article class="company-card"><img src="assets/img/companies/samsung.svg" alt="Samsung R&amp;D PH" /></article>
+          <article class="company-card"><img src="assets/img/companies/cloudemployee.svg" alt="Cloud Employee" /></article>
+          <article class="company-card"><img src="assets/img/companies/devy.svg" alt="Devy Australia" /></article>
+          <article class="company-card"><img src="assets/img/companies/surepayd.svg" alt="Surepayd Australia" /></article>
+          <article class="company-card"><img src="assets/img/companies/embiggen.svg" alt="Embiggen Group" /></article>
+          <!-- Duplicate set for seamless loop -->
+          <article class="company-card" aria-hidden="true"><img src="assets/img/companies/accenture.svg" alt="" /></article>
+          <article class="company-card" aria-hidden="true"><img src="assets/img/companies/samsung.svg" alt="" /></article>
+          <article class="company-card" aria-hidden="true"><img src="assets/img/companies/cloudemployee.svg" alt="" /></article>
+          <article class="company-card" aria-hidden="true"><img src="assets/img/companies/devy.svg" alt="" /></article>
+          <article class="company-card" aria-hidden="true"><img src="assets/img/companies/surepayd.svg" alt="" /></article>
+          <article class="company-card" aria-hidden="true"><span class="company-card__label">Embiggen Group</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Approach (carousel: frozen header, changing image + content) -->
     <section class="fp-section expertise approach-carousel" data-section data-anchor="approach" data-nav-label="Approach">
       <div class="approach-frozen fade">
         <span class="eyebrow">How I work</span>
@@ -221,10 +248,12 @@
   <script src="assets/js/fullpage.js"></script>
   <script src="assets/js/about.js"></script>
   <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/marquee.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const fp = new SnapPage('#fp', { duration: 800 });
       Carousels.init(fp);
+      Marquee.init();
 
       // Mobile: offset the Approach slide content to sit 70px below the frozen header.
       (function () {

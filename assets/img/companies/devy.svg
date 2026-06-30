@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110" width="260" height="110">
+  <!-- Brand dot mark: cyan/blue half-circle cluster echoing the original -->
+  <g>
+    <!-- innermost dense ring -->
+    <circle cx="50" cy="55" r="5.5" fill="#1ca7d8"/>
+    <circle cx="42" cy="42" r="4.5" fill="#1ca7d8"/>
+    <circle cx="42" cy="68" r="4.5" fill="#1ca7d8"/>
+    <circle cx="36" cy="55" r="4" fill="#2bb4e2"/>
+    <circle cx="48" cy="32" r="3.6" fill="#2bb4e2"/>
+    <circle cx="48" cy="78" r="3.6" fill="#2bb4e2"/>
+
+    <!-- middle ring -->
+    <circle cx="30" cy="35" r="3.4" fill="#41c1ea"/>
+    <circle cx="30" cy="75" r="3.4" fill="#41c1ea"/>
+    <circle cx="22" cy="48" r="3.2" fill="#41c1ea"/>
+    <circle cx="22" cy="62" r="3.2" fill="#41c1ea"/>
+    <circle cx="40" cy="22" r="3" fill="#1976c7"/>
+    <circle cx="40" cy="88" r="3" fill="#1976c7"/>
+
+    <!-- outer ring (sparser) -->
+    <circle cx="18" cy="38" r="2.6" fill="#56ceef"/>
+    <circle cx="18" cy="72" r="2.6" fill="#56ceef"/>
+    <circle cx="12" cy="55" r="2.4" fill="#56ceef"/>
+    <circle cx="28" cy="22" r="2.4" fill="#1976c7"/>
+    <circle cx="28" cy="88" r="2.4" fill="#1976c7"/>
+    <circle cx="50" cy="20" r="2.2" fill="#1976c7"/>
+    <circle cx="50" cy="90" r="2.2" fill="#1976c7"/>
+
+    <!-- subtle outermost specks -->
+    <circle cx="8" cy="46" r="1.6" fill="#7fd7f0"/>
+    <circle cx="8" cy="64" r="1.6" fill="#7fd7f0"/>
+    <circle cx="38" cy="14" r="1.6" fill="#7fd7f0"/>
+    <circle cx="38" cy="96" r="1.6" fill="#7fd7f0"/>
+    <circle cx="58" cy="14" r="1.6" fill="#7fd7f0"/>
+    <circle cx="58" cy="96" r="1.6" fill="#7fd7f0"/>
+  </g>
+
+  <!-- "devy" wordmark in white -->
+  <text x="80" y="76" fill="#ffffff"
+        font-family="system-ui, -apple-system, 'Segoe UI', Inter, Helvetica, Arial, sans-serif"
+        font-weight="800" font-size="62" letter-spacing="-1.5">devy</text>
+</svg>
